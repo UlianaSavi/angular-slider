@@ -22,3 +22,8 @@ body {
   letter-spacing: -0.055rem;
   font-weight: normal;
 }
+
+.img {
+  width: 60rem;
+  height: 34rem;
+}

@@ -1,0 +1,36 @@
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 72rem;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  left: 0rem; /* Move to 1 slide - width of the slide (60rem) + gap (12rem) */
+  display: flex;
+  width: 60rem;
+  gap: 12rem;
+  padding: 0 4rem;
+  transition: transform 0.5s ease-in-out 0s;
+}
+
+.arrows__next,
+.arrows__prev {
+  position: absolute;
+  top: 50%;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.arrows__prev {
+  left: 0;
+}
+
+.arrows__next {
+  right: 0;
+  transform: rotate(180deg);
+}
