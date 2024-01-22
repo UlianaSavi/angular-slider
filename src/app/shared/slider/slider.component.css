@@ -10,7 +10,7 @@
   left: 0rem; /* Move to 1 slide - width of the slide + gap */
   display: flex;
   width: 100%;
-  transition: all .5s;
+  transition: linear .5s;
 }
 
 .slide {
