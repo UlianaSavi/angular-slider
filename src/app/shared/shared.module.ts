@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SliderComponent } from './slider/slider.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
 @NgModule({
   declarations: [SliderComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    HttpClientModule
   ],
-  exports: [SliderComponent]
+  exports: [SliderComponent],
 })
 export class SharedModule { }
