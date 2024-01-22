@@ -1,0 +1,19 @@
+<div class="slider-container">
+  <div #sliderEl class="slider" [ngStyle]="{'left': slidesPosition + 'px'}">
+    <div class="slide" *ngFor="let slide of slides; let i = index" [id]="i">
+      <img class="img" [src]="slide" >
+    </div>
+  </div>
+  <button class="btn arrows__prev" (click)="go(types.prev)" [disabled]="arrowLeftDisabled">
+    <svg class="arrow-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M19 12H5" stroke="#1C1C28" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M12 19L5 12L12 5" stroke="#1C1C28" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+  </button>
+  <button class="btn arrows__next" (click)="go(types.next)" [disabled]="arrowRightDisabled">
+    <svg class="arrow-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M19 12H5" stroke="#1C1C28" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M12 19L5 12L12 5" stroke="#1C1C28" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+  </button>
+</div>
